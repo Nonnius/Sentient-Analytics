@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 196, 0) !important;
+}
+
+body{
+    animation:transitionIn 0.75s;
+    min-height: 100vh;
+    background-image: url(img/sunset-field.jpg) !important;
+    color: rgb(255, 196, 0) !important;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.sidebar{
+    background: rgba(51, 38, 4, 0.292);
+    backdrop-filter: blur(5px);
+    width: 250px;
+    left: -250px;
+    height: 100vh;
+    position: fixed;
+    top: -0.8px;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+    border-right: 2px solid rgba(255, 196, 0, 0.351);
+}
+
+header{
+    background: rgba(51, 38, 4, 0.292);
+    backdrop-filter: blur(px);
+    border-bottom: 1px solid rgba(255, 196, 0, 0.375);
+    height: 25%;
+}
+
+header h3{    
+    font-size: 13px !important;
+    font-weight: bold;  
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+header img{
+    width: 60px;
+    height: 50px;
+    margin: 15px;
+    margin-left: 90px;
+    border-radius: 20%;
+    border: 3px solid rgb(255, 196, 0) !important;
+}
+
+.close-btn{
+    position: absolute;
+    color: rgb(255, 196, 0);
+    font-size: 23px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    -webkit-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    -moz-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    box-shadow:  0 0 10px 3px rgba(255, 196, 0); 
+}
+
+p {
+    font-size: 10px;
+    margin-left: 15px;
+    margin-top: 12% !important;
+    color: white;   
+}
+
+.menu-btn{
+    position: absolute !important;
+    font-size: 35px !important;
+    cursor: pointer !important;
+    margin: 25px !important;
+    margin-top: 3% !important;
+    font-size: 48px;
+}
+
+.menu-btn:hover{
+    -webkit-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    -moz-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    box-shadow:  0 0 10px 3px rgba(255, 196, 0);
+ }
+
+
+.menu{
+    width: 100%;
+    margin-top: 50px ;
+}
+
+.menu .item{
+    position: relative;
+    cursor: pointer;
+}
+
+.menu .item a{
+    color: rgb(255, 196, 0);
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    line-height: 60px;
+}
+
+.item a:hover {
+    -webkit-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    -moz-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    box-shadow:  0 0 10px 3px rgba(255, 196, 0); 
+ }
+
+ .item a:hover i{
+    -webkit-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    -moz-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    box-shadow:  0 0 10px 3px rgba(255, 196, 0); 
+}
+
+.item i{
+    margin-right: 15px;
+}
+
+.item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.item .submenu{
+    background: rgba(255, 255, 255, 0.134);
+    display: none;
+    font-size: 12px;
+}
+
+.submenu a {
+    font-size: 12px !important;
+    border-bottom: 2px solid rgb(255, 196, 0) !important;
+    text-align: center;
+}
+
+.subitem:hover{
+    -webkit-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    -moz-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    box-shadow:  0 0 10px 3px rgba(255, 196, 0);
+ }
+
+ p #ref{
+    margin-top: 150% !important;
+}
+
+.sidebar.active{
+    left: 0;
+}
+
+.side-bar::-webkit-scrollbar{
+    width: 0px;
+}
+
+.sidebar{
+    padding: 1px;
+}
+
+.header2 h1{
+    position: absolute;
+    color: rgba(255, 196, 0);
+    width: 28.5%;
+    background: rgba(51, 38, 4, 0.292);
+    font-family: "Vivaldi", sans-serif;
+    justify-content: center;
+    margin-left: 35.5% !important;
+    font-weight: bold;
+    font-size: 46px;
+    align-items: center;
+    margin: 5%;
+}
+
+.pdf{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 125%;
+}

@@ -1,0 +1,103 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My Credentials</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/aes.js">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="mycred.css">
+   
+   
+
+</head>
+
+<div class="banner">
+	<div class="row">
+		<div class="col">
+			<h2>My Education Achievements</h2>
+		</div>
+	</div>
+	
+</div>	
+
+<body>
+	
+	 <!--navbar-->
+	 <nav class="navbar">
+		<div class="logo"></div>
+		<h1>Sentient Analytics</h1>
+	  	<img src="img/SA-logo.jpg" alt="sentient"></div>
+	  	<div class="button ms-auto" style="z-index: 999;">            
+			<button class = "btnn"><a href="Home.html" style="text-decoration: none;">Home</a></button>
+			<button class = "btnn"><a href="About.html" style="text-decoration: none;">About</a></button>
+			<button class = "btnn"><a href="MS-Credentials.html" style="text-decoration: none;">MS-Credentials</a></button>
+			<button class = "btnn"><a href="My-Projects-Portfolio.html" style="text-decoration: none;">My Portfolio</a></button>
+
+	    </div>      
+    </nav>
+
+		
+
+
+
+	
+	<div class="box">
+		
+		<div class="item"><img src="img/1man.jpg" alt="" class="img-box"></div>	
+		<div class="item"><img src="img/manu2A.jpg" alt="" class="img-box"></div>	
+		<div class="item"><img src="img/Associates-DegreeA.jpg" alt="" class="img-box"></div>	
+		<div class="item"><img src="img/Java-CertificationA.jpg" alt="" class="img-box"></div>	
+		<div class="item"><img src="img/certaws.jpg" alt="" class="img-box"></div>	
+		<div class="item"><img src="img/sql1A.jpg" alt="" class="img-box"></div>	
+		<div class="item"><img src="img/sql2A.jpg" alt="" class="img-box"></div>	
+		<div class="item"><img src="img/total1.jpg" alt="" class="img-box"></div>	
+		<div class="item"><img src="img/pmApp1A.jpg" alt="" class="img-box"></div>	
+		<div class="item"><img src="img/pmApp2B.jpg" alt="" class="img-box"></div>
+	</div>
+
+	<div class="btn">
+		<span class="prev"></span>			
+		<span class="next"></span>
+			
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<script>
+	
+		let prev = document.querySelector('.prev');
+		let next = document.querySelector('.next');
+
+		next.addEventListener('click', function(){
+			let items = document.querySelectorAll('.item');
+			document.querySelector('.box').appendChild(items[0]);
+		});
+
+		document.addEventListener('DOMContentLoaded', function() {
+    let prev = document.querySelector('.prev');
+    
+    if (prev) {
+        prev.addEventListener('click', function() {
+            let items = document.querySelectorAll('.item');
+            let box = document.querySelector('.box');
+
+            if (items.length > 0 && box) {
+                box.prepend(items[items.length - 1]);
+            }
+        });
+    } else {
+        console.error('Element with class .prev not found');
+    }
+});
+
+	
+	</script>
+
+
+
+  
+</body>
+</html>
