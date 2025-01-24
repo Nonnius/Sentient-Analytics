@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "./abstracts/variables";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import './utilitites/bootstrap-api-utilitites';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    animation:transitionIn 0.75s;
+    margin: 0;
+    height: 100vhw;
+    background-image: url('img/new-york-city-morning.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif !important;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.navbar {
+    display: absolute;
+    background: rgba(27, 27, 27, 0.414) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    backdrop-filter: blur(5px) !important;
+    border: 1px solid rgba(254, 186, 79, 0.1) !important;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4) !important;
+    border-color: rgb(32, 17, 239) !important;
+    border-radius: 5px;
+}
+
+.navbar .btn {
+    background: rgba(255, 255, 255, .06);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .5);
+    border: .08px solid rgb(32, 17, 239);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.btn.btn:hover {
+    transform: scale(1.1) rotate(.5deg);
+    -webkit-box-shadow: 0 0 5px 3px rgba(254. 186, 79, 0.9);
+    -moz-box-shadow: 0 0 5px 3px rgba(227, 232, 249, 0.9);
+    box-shadow: 0 0 5px 3px rgba(230, 233, 248, 0.9);
+}
+
+
+.card-body {
+    display: absolute;
+    background: rgba(27, 27, 27, 0.086) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .2) !important;
+    border-radius: 50px !important;
+    border: 1px solid rgba(254, 186, 79, 0.1) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    border-color: rgb(32, 17, 239) !important;
+    backdrop-filter: blur(5px) !important;
+    border-radius: 10px !important;
+    margin-top: 110px !important;
+    margin-bottom: 110px !important;
+    height: 110px !important;
+}
+
+.container2 {
+    height: -5px !important;
+    border-color: blue !important;
+}
+
+.table {
+    display: absolute;
+    margin-left: 1%;
+    border-collapse: collapse;
+    font-size: 10.5px;
+    color: rgb(32, 17, 239);
+    border-color: blue !important;
+    width: 700px;
+    background: rgba(27, 27, 27, 0.086) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .4) !important;    
+    border: 1px solid rgba(32, 17, 239, 0.592) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 10px !important;
+    justify-content: center !important;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid rgb(32, 17, 239);
+    border-right: 1px solid rgb(32, 17, 239);
+    border-left: 1px solid rgba(32, 17, 239);
+    height: 1px !important;
+    width: 20px !important;
+    border-color: blue;
+}
+
+.table td {
+    border-right: 1px solid rgba(32, 17, 239);
+    height: 1px !important;
+}
+
+.table th {
+    border-bottom: 1px solid rgb(32, 17, 239) !important;
+}
+
+.table tbody tr:last-of-type {
+    border-top: 3px solid rgba(32, 17, 239);
+    margin-right: -1px;
+    font-weight: bold;
+}
+
+.card{
+    width: 450px;
+    height: 45.5%; 
+    margin-top: -23%;
+    margin-left: 69.5%;
+    background: rgba(27, 27, 27, 0.086) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .4) !important;    
+    border: 1px solid rgba(32, 17, 239, 0.1) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 10px !important;
+    border: 2px solid blue !important;
+}
+
+#totalAssets{
+    margin-top: 10px;
+    font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
+}
+
+h3{
+    margin-top: 9px !important;
+    text-align: center;
+    color: white; 
+}
+

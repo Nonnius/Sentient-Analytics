@@ -1,0 +1,276 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/aes.js">
+    <link rel="stylesheet" href="dashboard.css" media="screen" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md my-1 m-4 p-1 fixed-top">
+        <div class="container xxl text-white">
+            <h6>Rezalot Consolidated Financial Statement <br>Assets Overview</h6>
+
+
+
+            <!--toggle button for mobile usage-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!--Navbar links-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                </li>
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a class="btn btn-secondary text-white btn-sm" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a class="btn btn-secondary text-white btn-sm" href="About.html">About</a>
+                </li>
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a class="btn btn-secondary text-white btn-sm" href="Degree-&-Certifications.html">My Credentials</a>
+                </li>
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a class="btn btn-secondary text-white btn-sm" href="MS-Credentials.html">Ms Credentials</a>
+                </li>
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a class="btn btn-secondary text-white btn-sm" href="My-Projects-Portfolio.html">My Projects Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--card inclusion-->
+    
+        <div class="container my-2">
+            <div class="row my-2 align-items-center justify-content-center">
+                <div class="col-2">
+                    <div class="card-body text-center text-white py-4">
+                        <h5 class="card-title">Assets</h5>
+                        <h5 class="card-value1 text-white">$175,990</h5>
+                        <i class="bi bi-caret-up-fill text-success"></i>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card-body text-center text-white py-4">
+                        <h5 class="card-title">Liabilities</h5>
+                        <h5 class-="card-value2 text-white">$90,521</h5>
+                        <i class="bi bi-caret-up-fill text-success"></i>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card-body text-center text-warning py-4">
+                        <h5 class="card-title text-white">ROE</h5>
+                        <h5 class="card-value text-danger">-1.32</h5>
+                        <i class="bi bi-caret-down-fill text-danger"></i>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card-body text-center text-warning py-4">
+                        <h5 class="card-title text-white">Asset Turnover</h5>
+                        <h5 class="card-value text-white">2.34</h5>
+                        <i class="bi bi-caret-up-fill text-success"></i>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card-body text-center text-white py-4">
+                        <h6 class="card-title text-white">Leveraging Power</h6>
+                        <h5 class="card-value text-white">1.03</h5>
+                        <i class="bi bi-caret-up-fill text-success"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--table inclusion-->
+        <section>
+            <div class="container2">
+                <div class="row">
+                    <div class="col-8">
+                        <table class="table text-white">
+                            <thead>
+                                <tr>
+                                    <th width=2.5%>Non-Current Assets 2021</th>
+                                    <th width=2.5%>Current Assets 2021</th>
+                                    <th width=1.5%>Total Assets 2021</th>
+                                    <th width=1.5%>Total Assets 2020</th>
+                                    <th width=1%>YoY G/L</th>
+                                    <th width=2.5%>Shareholder's Equity 2021</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Goodwill</td>
+                                    <td>Miscellaneous Assets Inventories</td>
+                                    <td>&nbsp;&nbsp;$5,144</td>
+                                    <td>&nbsp;&nbsp;$7,445</td>
+                                    <td style='color:#Ff0000;'' >-$2,301</td>
+                                    <td style=' color:#Ff0000;'>-$5,242</td>
+                                </tr>
+                                <tr>
+                                    <td>Other intangible assets</td>
+                                    <td>Prepayments Owed et al</td>
+                                    <td>&nbsp;&nbsp;$35,722</td>
+                                    <td>&nbsp;&nbsp;$31,067</td>
+                                    <td>&nbsp;&nbsp;$4,655</td>
+                                    <td>&nbsp;&nbsp;$13,437</td>
+                                </tr>
+                                <tr>
+                                    <td>Right of use assets</td>
+                                    <td>Trade and other receivables</td>
+                                    <td>&nbsp;&nbsp;$19,012</td>
+                                    <td>&nbsp;&nbsp;$16,616</td>
+                                    <td>&nbsp;&nbsp;$2,396</td>
+                                    <td style='color:#Ff0000;'>-$13,649</td>
+                                </tr>
+                                <tr>
+                                    <td>Investments ROUA</td>
+                                    <td>Derivative financial instruments</td>
+                                    <td>&nbsp;&nbsp;$62,254</td>
+                                    <td>&nbsp;&nbsp;$57,029</td>
+                                    <td>&nbsp;&nbsp;$5,225</td>
+                                    <td>&nbsp;&nbsp;$55,536</td>
+                                </tr>
+                                <tr>
+                                    <td>Investment property</td>
+                                    <td>Other short term financial assets</td>
+                                    <td>&nbsp;&nbsp;$1,576</td>
+                                    <td>&nbsp;&nbsp;$909</td>
+                                    <td>&nbsp;&nbsp;$667</td>
+                                    <td style='color:#Ff0000;'>-$1,566</td>
+                                </tr>
+                                <tr>
+                                    <td>Other long-term assets</td>
+                                    <td>Other short term financial assets</td>
+                                    <td>&nbsp;&nbsp;$13,317</td>
+                                    <td>&nbsp;&nbsp;$12,926</td>
+                                    <td>&nbsp;&nbsp;$391</td>
+                                    <td>&nbsp;&nbsp;$4,820</td>
+                                </tr>
+                                <tr>
+                                    <td>Other long-term financial assets</td>
+                                    <td>Cash and cash equivalents </td>
+                                    <td>&nbsp;&nbsp;$34,914</td>
+                                    <td>&nbsp;&nbsp;$11,357</td>
+                                    <td>&nbsp;&nbsp;$23,557</td>
+                                    <td>&nbsp;&nbsp;$30,740</td>
+                                </tr>
+                                <tr>
+                                    <td>Deferred tax assets</td>
+                                    <td>ommitted</td>
+                                    <td>&nbsp;&nbsp;$4,051</td>
+                                    <td>&nbsp;&nbsp;$4,137</td>
+                                    <td>&nbsp;&nbsp;$30,740</td>
+                                    <td>&nbsp;&nbsp;$4,051</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>&nbsp;&nbsp;$905</td>
+                                    <td style='color:#Ff0000;'>-$905</td>
+                                    <td style='color:#Ff0000;'>-$2,658</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>&nbsp;&nbsp;$175,990</td>
+                                    <td>&nbsp;&nbsp;$142,391</td>
+                                    <td>&nbsp;&nbsp;$33,599</td>
+                                    <td>&nbsp;&nbsp;$85,469</td>
+                                </tr>
+                            </tbody>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="card">
+                     <h3>Total Assets</h3>
+                        <canvas id="totalAssets"></canvas>
+                       
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+            
+                <script>
+                    const ctx= document.getElementById('totalAssets').getContext('2d');
+            
+                    const myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Yr 2020', 'Yr 2021'],
+                            datasets: [{
+                                label: 'Total Assets',
+                                data: [142391, 175990],
+                                backgroundColor: [
+                                    'rgba(255, 255, 255, 0.4)',
+                                    'rgba(255, 255, 255, 0.4)',
+                                    'rgba(255, 255, 255, 0.4)',
+                                    'rgba(255, 255, 255, 0.4)'
+                                   
+                                   
+                                ],
+                                borderColor: [
+                                    'blue',
+                                    'blue',
+                                   
+                                ],
+                             
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    x: {
+                                        ticks: {
+                                            color: 'white'
+                                        },
+                                    },
+                                    y: {
+                                        ticks: {
+                                            color: 'white'
+                                        },
+                                        beginAtZero: true,
+                                        grid: {
+                                            color: 'blue'
+                                        },
+                                    }
+                                }
+                            }
+                        });
+                                 
+                </script>
+                   </div>
+                </div>     
+            </div>
+        </section>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+            </script>
+</body>
+
+</html>
