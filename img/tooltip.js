@@ -1,9 +1,0 @@
- tutte e finestre aperte VeraCrypt. S’è què ùn funziuneghja micca, ci vole à rilancià Windows è pruvà torna.</entry>
-		<entry lang="co" key="DISMOUNT_ALL_FIRST">Tutti i vulumi VeraCrypt devenu esse smuntati nanzu d’installà o disinstallà VeraCrypt.</entry>
-		<entry lang="co" key="UNINSTALL_OLD_VERSION_FIRST">Una versione anziana di VeraCrypt hè attualmente installata nant’à stu sistema. Deve esse disinstallata prima di pudè installà sta nova versione di VeraCrypt.\n\nDa ch’ellu si chjode sta finestra di messaghju, u disinstalladore di a vechja versione serà lanciatu. Sappiate chì alcunu vulume ùn serà dicifratu quandu vò disinstallate VeraCrypt. Dopu a disinstallazione di a vechja versione di VeraCrypt, lanciate torna u stalladore di a nova versione di VeraCrypt.</entry>
-		<entry lang="co" key="REG_INSTALL_FAILED">L’installazione di l’entrate di a basa di registru hè fiascata</entry>
-		<entry lang="co" key="DRIVER_INSTALL_FAILED">L’installazione di u pilotu d’apparechju hè fiascata. Rilanciate Windows è tandu pruvate torna à installà VeraCrypt.</entry>
-		<entry lang="co" key="STARTING_DRIVER">Avviu di u pilotu d’apparechju VeraCrypt</entry>
-		<entry lang="co" key="DRIVER_UINSTALL_FAILED">L’installazione di u pilotu d’apparechju hè fiascata. Sappiate chì, per via d’un prublema cù Windows, serà forse richiestu di scunnettesi o di rilancià u sistema prima chì u pilotu d’apparechju sia disinstallatu (o riinstallatu).</entry>
-		<entry lang="co" key="INSTALLING_DRIVER">Installazione di u pilotu d’apparechju VeraCrypt</entry>
-		<entry lang="co" key="STOPPING_DRIVER">Piantata di u pilotu d’a
