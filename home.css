@@ -1,0 +1,260 @@
+@import "./abstracts/variables";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import './utilitites/bootstrap-api-utilitites';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 196, 0) !important;
+}
+
+body{
+    animation:transitionIn 0.75s;
+    min-height: 100vh;
+    background-image: url(img/sunset-field.jpg) !important;
+    color: rgb(255, 196, 0) !important;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+
+.sidebar{
+    background: rgba(51, 38, 4, 0.292);
+    backdrop-filter: blur(5px);
+    width: 250px;
+    left: -250px;
+    height: 100vh;
+    position: fixed;
+    top: -0.8px;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+    border-right: 2px solid rgba(255, 196, 0, 0.351);
+}
+
+header{
+    background: rgba(51, 38, 4, 0.292);
+    backdrop-filter: blur(px);
+    border-bottom: 1px solid rgb(255, 196, 0);
+    height: 25%;
+}
+
+header h3{    
+    font-size: 13px !important;
+    font-weight: bold;  
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+header img{
+    width: 60px;
+    height: 50px;
+    margin: 15px;
+    margin-left: 90px;
+    border-radius: 20%;
+    border: 3px solid rgb(255, 196, 0) !important;
+}
+
+.close-btn{
+    position: absolute;
+    color: rgb(255, 196, 0);
+    font-size: 23px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    -webkit-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    -moz-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    box-shadow:  0 0 10px 3px rgba(255, 196, 0); 
+}
+
+p {
+    font-size: 10px;
+    margin-left: 15px;
+    margin-top: 10%;
+    color: white;   
+}
+
+.menu{
+    width: 100%;
+    margin-top: 50px ;
+}
+
+.menu-btn{
+    font-size: 46px !important;    
+}
+
+.menu-btn:hover{
+    -webkit-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    -moz-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    box-shadow:  0 0 10px 3px rgba(255, 196, 0); 
+}
+
+.menu .item{
+    position: relative;
+    cursor: pointer;
+}
+
+.menu .item a{
+    color: rgb(255, 196, 0);
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    line-height: 60px;
+}
+
+.item a:hover {
+   -webkit-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+   -moz-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+   box-shadow:  0 0 10px 3px rgba(255, 196, 0); 
+}
+
+.item a:hover i{
+    -webkit-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    -moz-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+    box-shadow:  0 0 10px 3px rgba(255, 196, 0); 
+}
+
+
+.item i{
+    margin-right: 15px;
+}
+
+.item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.item .submenu{
+    background: rgba(255, 255, 255, 0.134);
+    display: none;
+    font-size: 12px;
+}
+
+.submenu a {
+    font-size: 12px !important;
+    border-bottom: 2px solid rgb(255, 196, 0) !important;
+    text-align: center;
+}
+.subitem:hover{
+   -webkit-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+   -moz-box-shadow: 0 0 10px 3px rgba(255, 196, 0);
+   box-shadow:  0 0 10px 3px rgba(255, 196, 0); ;
+}
+
+p #ref{
+    margin-top: 150% !important;
+}
+
+.menu-btn{
+    position: absolute;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 25px;
+    margin-top: 1%;
+}
+
+.sidebar.active{
+    left: 0;
+}
+
+.side-bar::-webkit-scrollbar{
+    width: 0px;
+}
+
+.sidebar{
+    padding: 1px;
+}
+
+/*end of sidenav code*/
+
+ /*layout code */
+
+ .grid-container {
+    color: lightgray;
+    font-family: "Playfair Display", Georgia, 'Times New Roman', Times, 6 serif;
+    width: 70% !important;
+    margin-top: 2% !important;
+   
+    background: rgba(51, 38, 4, 0.447);
+    backdrop-filter: blur(5px);   
+    margin-right: -30%;  
+    display: absolute; 
+   
+ }
+
+ .grid-container h1{
+    margin-top: -5rem;
+    font-family: "Vivaldi", sans-serif;
+    color:rgb(255, 196, 0);
+    font-size: 44px;
+    font-weight: bold;
+ }
+
+ .grid-container img{
+    margin-top: 13.5%;
+    margin-left: -5%;
+    mask-image: linear-gradient(to left, black, transparent 100%);
+    mask-repeat: no-repeat;
+    display: flex;
+ }
+
+ .grid-container2{
+    background: transparent;
+    display: absolute;
+ }
+
+ .grid-container2 img{
+    margin-left: -80.5%;
+    mask-image: linear-gradient(to bottom, black, transparent 100%);
+    mask-repeat: no-repeat;
+    margin-top: 45%;
+    border-color: 2px solid rgba(255, 196, 0) !important;
+    display: flex;
+
+ }
+
+ .grid-container3{
+    background: transparent;
+    display: absolute;
+    
+ }
+
+ .grid-container3 img{
+    mask-image: linear-gradient(to right, black, transparent 100%);
+    mask-repeat: no-repeat;
+    margin-top: -236%;
+    margin-left: -44%;
+    display: flex;
+ }
+
+ .overlapping ul {
+    display: flex;
+    grid-template-columns: 4fr 3fr 3fr !important;
+    width: 60%;
+    list-style-type: none !important;
+    margin-left: 20%;    
+}
+
+.ul {
+    padding: 2.2rem;
+}
