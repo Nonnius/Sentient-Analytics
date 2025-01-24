@@ -1,0 +1,199 @@
+@import "./abstracts/variables";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import './utilitites/bootstrap-api-utilitites';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
+} 
+
+body{
+    animation:transitionIn 0.75s;
+    min-height: 100vh;
+    color: white;
+    background: black;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.row1{
+    height: 100vh;
+}
+
+.sidebar{
+    background-image: url(img/sunsetnewa.jpg);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    left: -250px;
+    position: fixed;
+    top: -0.8px;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left; 
+    border-right: 2px solid rgba(243, 239, 6, 0.041)  
+}
+
+header{
+    border-bottom: 2px solid silver;
+    background: rgba(243, 239, 6, 0.041);
+    backdrop-filter: blur(10px);
+}
+
+header img{
+    width: 20%;
+    margin: 5%;
+    margin-left: 35%;
+    border-radius: 5%;
+    border: 3px solid silver;
+}
+
+h3{
+    font-size: 14px;
+    margin-left: 23%;
+}
+
+p{
+    font-size: 11px;
+    margin-left: 10%;
+}
+
+.close-btn{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    right: 0px;
+    margin: 13px;
+    cursor: pointer;
+}
+
+.menu{
+    width: 100%;
+    margin-top: 50px ;
+}
+
+.menu-btn{
+    font-size: 46px !important;
+    width: 4px;
+    margin-left: 3%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.menu .item{
+    position: relative;
+    cursor: pointer;
+}
+
+.menu .item a{
+    color: rgb(246, 244, 239);
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    line-height: 60px;
+}
+
+.item a:hover {
+   -webkit-box-shadow: 0 0 10px 3px rgba(243, 242, 239, 0.041);
+   -moz-box-shadow: 0 0 10px 3px rgba(243, 242, 239, 0.041);
+    box-shadow:  0 0 10px 3px rgba(243, 242, 239, 0.041); 
+}
+
+.item a:hover i{
+    -webkit-box-shadow: 0 0 10px 3px rgb(243, 242, 239, 0.041);
+    -moz-box-shadow: 0 0 10px 3px rgba(243, 242, 239, 0.041);
+    box-shadow:  0 0 10px 3px rgba(243, 242, 239, 0.041); 
+}
+
+
+.item i{
+    margin-right: 15px;
+}
+
+.item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.item .submenu{
+    background: rgba(243, 242, 239, 0.041);
+    display: none;
+    font-size: 12px;
+}
+
+.submenu a {
+    font-size: 12px !important;
+    border-bottom: 2px solid rgb(246, 244, 239) !important;
+}
+.subitem:hover{
+   -webkit-box-shadow: 0 0 10px 3px rgba(243, 242, 239, 0.041);
+   -moz-box-shadow: 0 0 10px 3px rgba(243, 242, 239, 0.041);
+    box-shadow:  0 0 10px 3px rgba(243, 242, 239, 0.041); ;
+}
+
+
+.sidebar.active{
+    left: 0;
+}
+
+.sidebar::-webkit-scrollbar{
+    width: 0px;
+}
+
+.sidebar{
+    padding: 1px;
+}
+
+.container{
+    background-image: url(img/sunseta1.jpg);
+    width: 75%;
+    margin: -20%;
+    margin-top: -5%;
+    margin-left: 15%;
+    margin-bottom: 5%;    
+}
+
+.card{
+    background: rgba(237, 236, 234, 0.066);
+    backdrop-filter: blur(10px);
+    width: 120%;
+    height: 105%;
+    margin-top: 3%;
+    margin-left: 3%;
+    border: none;
+}
+
+.card-header{
+    font-family: "vivaldi", sans-serif;
+}
+
+.card p{
+    font-size: 16px;
+}
+
+.card2 img{
+    mask-image: linear-gradient(to left, black, transparent 100%);
+    margin-left: 20%;
+    width: 50%;
+    margin-top: 20%;
+    
+}
+
+
