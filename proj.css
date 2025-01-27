@@ -34,7 +34,7 @@ body{
 .navbar{
     height: 80px;
     width: 85%;
-    margin-top: -46%;
+    margin-top: -47%;
     margin-left: 7%;
     border-radius: 10px;
     display: grid;
@@ -78,10 +78,11 @@ img{
     display: grid;
     background: rgba(28, 28, 30, 0.656);
     width: 73% !important;
-    height: 70vh;   
+    height: 77vh;   
     margin-left: 14% !important;
     margin-top: 5% !important;
     border-radius: 5px;
+
  
 }
 
@@ -95,14 +96,14 @@ img{
 
 .grid-cards{    
     display: grid;
-    height: 275px;
+    height: 90%;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 2rem;
     text-align: center;
     width: 78%;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 6%;
     margin-bottom: 3%;
 }
 
@@ -157,7 +158,7 @@ h1{
     font-family: "Vivaldi", sans-serif;
     justify-content: center;
     margin-left: 24%;
-    margin-top: 2%;
+    margin-top: 0;
     margin-bottom: 5%;
     width: 35.5% !important;
     border-radius: 5px;
